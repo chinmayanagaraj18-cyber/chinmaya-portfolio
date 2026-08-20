@@ -1,0 +1,82 @@
+.contact-section {
+  background-color: var(--light);
+}
+
+.contact-intro {
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.85;
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.app.dark .form-group input,
+.app.dark .form-group textarea,
+.app.dark .form-group select {
+  background-color: #8d4c4c;
+  color: rgb(15, 12, 12);
+  border-color: #ebc498;
+}
+
+.app.dark .form-group input::placeholder,
+.app.dark .form-group textarea::placeholder {
+  color: #bbb;
+}

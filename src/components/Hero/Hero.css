@@ -1,0 +1,81 @@
+.hero-section {
+  background-color: #e9dac9;
+  color: #3E342D;
+  text-align: center;
+  padding: 120px 5%;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-section p {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 90px 5%;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+.btn-primary{
+    background-color: #A98467;
+    color: #FFFFFF;
+}
+.btn-primary:hover{
+    background-color: #7B5E48;
+    border-color: var(--light);
+    color: #FFFFFF;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: #7B5E48;
+    border: 1px solid #131312;
+}
+.btn-secondary:hover{
+    background-color: #E8D5C4;
+    color: #3E342D;
+
+}

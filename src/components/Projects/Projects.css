@@ -1,0 +1,94 @@
+.projects-section {
+  background-color: #EFE7DE;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background-color: #FFFDFC;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card h3 {
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #E8D5C4;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-buttons .btn {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+.app.dark .project-card {
+  background-color: #162544;
+  color:  #F8FAFC;
+}
+
+.app.dark .project-card .btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.app.dark .project-card .btn-secondary {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+.projects-section h2{
+    text-align: center;
+}
