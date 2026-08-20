@@ -21,7 +21,10 @@ function Navbar() {
  
   }, [theme]);
  
- 
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+  setMenuOpen(!menuOpen);
+};
   // Toggle dark/light mode
   const toggleTheme = () => {
  
@@ -46,7 +49,7 @@ function Navbar() {
  
  
         {/* Navigation links */}
-        <ul className="nav-links">
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
  
           <li>
             <a href="#about">
@@ -87,13 +90,12 @@ function Navbar() {
  
         {/* Mobile menu */}
         <button
-          
-          className="menu-toggle"
-          aria-label="Toggle navigation"
-          
-        >
-          ≡
-        </button>
+  className="menu-toggle"
+  onClick={toggleMenu}
+  aria-label="Toggle navigation"
+>
+  {menuOpen ? "✕" : "☰"}
+</button>
  
       </nav>
  
